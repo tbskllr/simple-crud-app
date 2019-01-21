@@ -30,3 +30,25 @@
     transform: rotate(360deg);
   }
 }
+
+.button-remove {
+  color: red;
+}
+
+.button-edit {
+  color: blue;
+}
+
+.button-save {
+  color: green;
+}
+
+.commentContainer {
+  padding: 150px;
+  font-size: 3rem;
+  border-style: solid;
+  display: flex;
+  align-content: stretch;
+  flex-direction: column;
+  background-color: #61dafb;
+}
