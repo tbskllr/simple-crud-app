@@ -1,14 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import Comment from "./App";
+import Board from "./Board";
 import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
   <div className="board">
-    <Comment>Hey Now</Comment>
-    <Comment>Bacon</Comment>
-    <Comment>Tuna</Comment>
+    <Board />
   </div>,
   document.getElementById("root")
 );

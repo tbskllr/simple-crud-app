@@ -11,20 +11,24 @@ class Comment extends Component {
     this.setState({ editing: true });
   };
 
-  remove() {
-    alert("Removing comment");
-  }
+  remove = () => {
+    this.props.deleteFromBoard(this.props.index);
+  };
 
   save = () => {
-    var val = this.refs.newText.value;
-    console.log("New Comment: " + val);
+    this.props.updateCommentText(this.refs.newText.value, this.props.index);
     this.setState({ editing: false });
   };
 
   renderForm() {
     return (
       <div className="commentContainer">
-        <textarea ref="newText" defaultValue={this.props.children} />
+        <textarea
+          rows="4"
+          cols="50"
+          ref="newText"
+          defaultValue={this.props.children}
+        />
         <button onClick={this.save} className="button-save">
           Save
         </button>
