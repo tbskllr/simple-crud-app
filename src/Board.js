@@ -51,9 +51,7 @@ class Board extends Component {
         >
           New Comment
         </button>
-        <div className="board">
-          {this.state.comments.map(this.eachComment)};
-        </div>
+        <div className="board">{this.state.comments.map(this.eachComment)}</div>
       </div>
     );
   }

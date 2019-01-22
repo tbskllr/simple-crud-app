@@ -24,8 +24,8 @@ class Comment extends Component {
     return (
       <div className="commentContainer">
         <textarea
-          rows="4"
-          cols="50"
+          autoFocus
+          className="textArea"
           ref="newText"
           defaultValue={this.props.children}
         />

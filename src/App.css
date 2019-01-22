@@ -1,84 +1,143 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 .button-remove {
-  background-color: red;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  font-size: 16px;
+  background-color: rgb(138, 9, 9);
+  display: inline-block;
   border: none;
+  padding: 1rem 2rem;
+  margin: 0;
   text-decoration: none;
+  color: #ffffff;
+  font-family: sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  transition: background 250ms ease-in-out, transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.button-remove:hover,
+.button-remove:focus {
+  background-color: #e04d4d;
+}
+
+.button-remove:focus {
+  outline: 1px solid #fff;
+  outline-offset: -4px;
+}
+.button-remove:active {
+  transform: scale(0.99);
 }
 
 .button-edit {
-  background-color: blue;
-  color: white;
-  text-align: center;
-  padding: 15px 32px;
-  font-size: 16px;
+  background-color: rgb(30, 30, 177);
+  display: inline-block;
   border: none;
+  padding: 1rem 2rem;
+  margin: 0;
   text-decoration: none;
+  color: #ffffff;
+  font-family: sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  transition: background 250ms ease-in-out, transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.button-edit:hover,
+.button-edit:focus {
+  background-color: #5d9ce9;
+}
+
+.button-edit:focus {
+  outline: 1px solid #fff;
+  outline-offset: -4px;
+}
+.button-edit:active {
+  transform: scale(0.99);
 }
 
 .button-save {
-  background-color: green;
-  color: white;
-  text-align: center;
-  padding: 15px 32px;
-  font-size: 16px;
+  background-color: rgb(12, 90, 29);
+  display: inline-block;
   border: none;
+  padding: 1rem 2rem;
+  margin: 0;
   text-decoration: none;
+  color: #ffffff;
+  font-family: sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  transition: background 250ms ease-in-out, transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.button-save:hover,
+.button-save:focus {
+  background-color: #5bbd6b;
+}
+
+.button-save:focus {
+  outline: 1px solid #fff;
+  outline-offset: -4px;
+}
+.button-save:active {
+  transform: scale(0.99);
 }
 
 .button-new {
-  background-color: purple;
-  color: white;
-  text-align: center;
-  padding: 15px 32px;
-  font-size: 16px;
-  float: bottom;
-  margin: 50px;
+  background-color: rgb(12, 90, 29);
+  display: inline-block;
   border: none;
+  padding: 1rem 2rem;
+  margin: 0;
   text-decoration: none;
+  color: #ffffff;
+  font-family: sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  transition: background 250ms ease-in-out, transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.button-new:hover,
+.button-new:focus {
+  background-color: #5bbd6b;
+}
+
+.button-new:focus {
+  outline: 1px solid #fff;
+  outline-offset: -4px;
+}
+.button-new:active {
+  transform: scale(0.99);
 }
 
 .commentContainer {
-  padding: 150px;
-  font-size: 3rem;
-  border-style: solid;
-  display: flex;
-  align-content: stretch;
-  flex-direction: column;
+  padding: 40px;
+  font-size: 1rem;
   background-color: lightslategrey;
+  background-size: 100% 100%;
+  border: 1px #ccc solid;
+}
+
+.textArea {
+  outline: none;
+  width: 600px;
+  height: 120px;
+  border: 3px solid #cccccc;
+  padding: 5px;
+  font-family: Tahoma, sans-serif;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
+
+.commentText {
+  border: 1px #ccc solid;
+  padding: 2rem;
+  display: block;
+  font-size: 1rem;
+  font-style: bold;
+  background: white;
 }
